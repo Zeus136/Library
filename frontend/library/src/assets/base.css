@@ -1,0 +1,212 @@
+/* src/assets/base.css */
+
+/* Toàn bộ ứng dụng */
+#app {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url('../assets/BookBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Container chính cho ứng dụng */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+/* Card sách */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.card-text {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Nút chung */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Form chung */
+form {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+}
+
+label.form-label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Tiêu đề */
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #555;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Tiêu đề chính */
+h1,
+h2 {
+  color: #003366;
+  /* Xanh đậm */
+  border-bottom: 2px solid #FFD700;
+  /* Viền dưới vàng sáng */
+  padding-bottom: 5px;
+}
+
+/* Tiêu đề phụ */
+h3,
+h4 {
+  color: #336699;
+  /* Xanh biển */
+}
+
+/* Điểm nhấn cho tiêu đề quan trọng hoặc button */
+.important-heading {
+  color: #FFD700;
+  /* Vàng sáng */
+}
+
+.button-primary {
+  background-color: #FFB347;
+  /* Vàng cam */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #FF8C00;
+  /* Cam đậm */
+}
+
+/* Viền phân cách */
+.separator {
+  border-bottom: 1px solid #D3D3D3;
+  /* Xám nhạt */
+  margin: 20px 0;
+}
